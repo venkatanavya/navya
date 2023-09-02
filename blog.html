@@ -1,0 +1,100 @@
+
+        
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign-Up Form</title>
+    <style>
+        /* Style for the title container */
+        .title-container {
+            background-color: #0077b6; /* Ocean blue background color */
+            color: #fff; /* White text color for better contrast */
+            padding: 10px;
+            text-align: left; /* Align the title to the left */
+        }
+
+        /* Style for the navigation menu */
+        .top-menu {
+            background-color: #0077b6; /* Ocean blue background color */
+            color: #fff; /* White text color for better contrast */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Style for the menu links */
+        .top-menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px; /* Adjust spacing between links as needed */
+        }
+
+        /* Style for the form container */
+        .form-container {
+            width: 300px; /* Adjust the width as needed */
+            margin: 20px auto; /* Center the form container horizontally */
+            background-color: #fff; /* White background for the form */
+            padding: 20px; /* Add padding for spacing between content and container edges */
+        }
+
+        /* Style for the form header */
+        .form-header {
+            text-align: center;
+        }
+
+        /* Style for form labels and inputs */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the submit button */
+        button[type="submit"] {
+            background-color: #0077b6; /* Ocean blue background color for button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1>Fly Makes You Faster</h1>
+    </div>
+    <div class="top-menu">
+        <a href="#">Dashboard Option 1</a>
+        <a href="#">Dashboard Option 2</a>
+        <a href="#">Dashboard Option 3</a>
+    </div>
+    <div class="form-container">
+        <h1 class="form-header">Sign Up</h1>
+        <form action="process_signup.php" method="POST">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Confirm Password Field -->
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
